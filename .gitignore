@@ -1,0 +1,66 @@
+# Compiled output
+target/
+build/
+out/
+
+# Maven specific files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Gradle specific files
+.gradle/
+build.gradle
+build/
+!gradle/wrapper/gradle-wrapper.properties
+
+# Spring Boot generated files
+mvnw
+mvnw.cmd
+**/target/
+**/build/
+!**/src/main/**/application.properties
+
+# Logs
+logs/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Compiled JARs and libraries
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot DevTools
+.restart
+.springBeans
+
+# IntelliJ IDEA workspace
+.idea/workspace.xml
+
+# External property files
+*.properties
+
+# Editor-specific files
+*~
+
+# Lombok
+!.lombok.config
