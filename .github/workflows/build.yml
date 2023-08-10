@@ -21,22 +21,3 @@ jobs:
       - name: Build with Maven
         #run: mvn -B package --file pom.xml
         run: mvn clean install
-      
-      - name: Login to Docker Hub
-        uses: docker/login-action@v1
-        with: 
-          registry_url: 'hub.docker.com'
-          repository_name: 'test'
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-      
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-        with: 
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/test/pipelineflow:latest
-
-        
-           
